@@ -1,0 +1,39 @@
+{
+  "name": "landingPage",
+  "description": "landingPage",
+  "version": "0.1.0",
+  "author": "k--kato",
+  "engines": {
+    "node": ">=0.12.x",
+    "npm": ">=2.13.x"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k--kato/landingPage/issues"
+  },
+  "homepage": "https://cam-net.co.jp/",
+  "scripts": {
+    "start": "gulp",
+    "gulp": "gulp"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k--kato/landingPage.git"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-imagemin": "~3.0.3",
+    "gulp-jshint": "~2.0.1",
+    "gulp-less": "~3.1.0",
+    "gulp-minify-css": "~1.2.4",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.3.2",
+    "gulp-uglify": "~2.0.0",
+    "gulp-util": "~3.0.7",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-convert-encoding": "^1.0.0"
+  },
+  "main": "gulpfile.js"
+}
