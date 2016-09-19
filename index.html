@@ -67,6 +67,36 @@
             margin-left: auto;
         }
 
+        div.chart:after {
+            z-index: -100;
+            position: absolute;
+            margin-top: 150px;
+            display: block;
+            content: '\f201';
+            font-family: FontAwesome;
+            color: #bbb;
+            font-size: 500px;
+            text-align: center;
+
+        }
+
+        .space {
+            margin-top: 70px;
+        }
+
+        .gray-out {
+            color: lightgrey;
+        }
+
+        #catch ul {
+        }
+
+        #catch i {
+            background-color: inherit;
+            display: inline-block;
+        }
+
+
     </style>
 
 </head><!--/head-->
@@ -82,13 +112,9 @@
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(images/slider/1.jpg)">
                 <div class="caption">
-                    <!--ターゲット-->
-                    <!---->
-                    <!--資本金 3億～20億　社員数3名～30名-->
-                    <!--ITリテラシーは高い人向け。-->
                     <h1 class="animated fadeInLeftBig">成長するクラウド型<span>ERP</span></h1>
                     <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に成長するサービス <strong>"CAMMMAX"</strong></p>
-                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="#catch">Start now</a>
                 </div>
             </div>
         </div>
@@ -130,24 +156,31 @@
                  data-wow-delay="300ms">
                 <h2>CAMMAXとは？</h2>
                 <h3>CAMMAXはお客様の成長に合わせてサービスを柔軟に拡張できるクラウド型ERPです</h3>
-                <h3>10年後の経営を見据えたIT投資を<strong>今</strong>始めませんか？</h3>
+                <h3>10年後の経営を見据えたIT投資を<strong> 今 </strong>始めませんか？</h3>
             </div>
-            <div class="col-sm-8 col-sm-offset-2">
-            <i class="fa fa-line-chart  fa-5x" aria-hidden="true"></i>
+            <div class="col-sm-8 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="350ms">
+                <h4>CAMMAXなら・・・</h4>
             </div>
         </div>
+        <div class="chart col-sm-8 col-sm-offset-3"></div>
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="entry-header">
-                        <h3>スタートアップ期</h3>
-                    </div>
-                    <i class="flaticon-add"></i>
-                </div>
+            <div class="entry-header">
+                <h3>スタートアップ期</h3>
             </div>
             <div class="row">
-                <div class="col-xs-12">
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-home fa-fw"
+                                                                                            aria-hidden="true"></i>&nbsp;
+                    <br>販売管理</a>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-book fa-fw"
+                                                                                            aria-hidden="true"></i>&nbsp;
+                    <br>仕入管理</a>
+            </div>
+            <div class="row space">
+                <div class="col-xs-1">
                     <i class="fa fa-child  fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-10">
                     <div class="popover right show service-popover">
                         <div class="arrow"></div>
                         <div class="popover-content"><p>ローリスクのIT投資で売上UPしたい！</p></div>
@@ -160,27 +193,21 @@
                 <h3>急成長期</h3>
             </div>
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="panel panel-default panel-menu col-xs-3 col-sm-offset-1">
-                        <div class="panel-body">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                            <span class="glyphicon-class"><br>EC通販<br>管理</span>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-menu col-xs-3 col-sm-offset-1">
-                        <div class="panel-body"><br>
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                            <span class="glyphicon-class"><br>物流連携</span>
-                        </div>
-                    </div>
-                </div>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-home fa-fw"
+                                                                                            aria-hidden="true"></i>&nbsp;
+                    <br>販売管理</a>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-book fa-fw"
+                                                                                            aria-hidden="true"></i>&nbsp;
+                    <br>仕入管理</a>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <i class="fa  fa-user  fa-3x" aria-hidden="true"></i>
-                    <div class="popover right show" style="position:relative; max-width:100%; margin-left: auto;">
+            <div class="row space">
+                <div class="col-xs-1">
+                    <i class="fa fa-user  fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-10">
+                    <div class="popover right show service-popover">
                         <div class="arrow"></div>
-                        <div class="popover-content"><p>軌道に乗ってきたしEC通販も始めよう</p></div>
+                        <div class="popover-content"><p>軌道に乗ってきたしEC通販も始めよう！</p></div>
                     </div>
                 </div>
             </div>
@@ -190,70 +217,63 @@
                 <h3>安定期</h3>
             </div>
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="panel panel-default panel-menu col-xs-3 col-sm-offset-1">
-                        <div class="panel-body">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                            <span class="glyphicon-class"><br>輸出入管理</span>
-                        </div>
-                    </div>
-                    <div class="panel panel-default col-xs-3 panel-menu col-sm-offset-1">
-                        <div class="panel-body">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                            <span class="glyphicon-class"><br>多通貨・<br>言語対応</span>
-                        </div>
-                    </div>
-                </div>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-home fa-fw"
+                                                                                            aria-hidden="true"></i>&nbsp;
+                    <br>販売管理</a>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-book fa-fw"
+                                                                                            aria-hidden="true"></i>&nbsp;
+                    <br>仕入管理</a>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
+            <div class="row space">
+                <div class="col-xs-1">
                     <i class="fa fa-users  fa-3x" aria-hidden="true"></i>
-                    <div class="popover right show"
-                         style="position:relative; max-width:100%; margin-left: auto;">
+                </div>
+                <div class="col-xs-10">
+                    <div class="popover right show service-popover">
                         <div class="arrow"></div>
-                        <div class="popover-content"><p>わが社も海外進出を…</p></div>
+                        <div class="popover-content"><p>わが社も海外進出を...</p></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="blog-posts">
-            <div class="row">
-                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp"
-                     data-wow-duration="1200ms"
-                     data-wow-delay="300ms">
-                    <h2>CAMMAXのすごいところ</h2>
-                </div>
-                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                    <i class="fa fa-refresh fa-5x" style="margin: 0 auto" aria-hidden="true"></i>
-                    <div class="entry-header">
-                        <h3><a href="#">全業務のデータを一元管理</a></h3>
+        <div class="container">
+            <div class="blog-posts">
+                <div class="row">
+                    <div class="heading text-center col-sm-8 col-sm-offset-2 space wow fadeInUp"
+                         data-wow-duration="1200ms"
+                         data-wow-delay="300ms">
+                        <h2>CAMMAXのすごいところ</h2>
                     </div>
-                    <div class="entry-content">
-                        <p>CAMMAXはあらゆる業務をカバーできるトータル・ソリューションをご提供。全てのデータは社内より安全なAWSのセキュリティ環境下で保護されます。</p>
-                        <p>
-                            もちろん既存システムや外部システムとの連携もお任せください。日々の事務作業コスト削減はもちろん、収集したデータを元に様々な分析データを出力し、お客様の売り上げ向上を支援いたします</p>
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="400ms">
+                        <i class="fa fa-refresh fa-5x" style="margin: 0 auto" aria-hidden="true"></i>
+                        <div class="entry-header">
+                            <h3><a href="#">全業務のデータを一元管理</a></h3>
+                        </div>
+                        <div class="entry-content">
+                            <p>CAMMAXはあらゆる業務をカバーできるトータル・ソリューションをご提供。全てのデータは社内より安全なAWSのセキュリティ環境下で保護されます。</p>
+                            <p>
+                                もちろん既存システムや外部システムとの連携もお任せください。日々の事務作業コスト削減はもちろん、収集したデータを元に様々な分析データを出力し、お客様の売り上げ向上を支援いたします</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <i class="fa fa-line-chart fa-5x mid-icon" aria-hidden="true"></i>
-                    <div class="entry-header">
-                        <h3><a href="#">最小限の導入リスク</a></h3>
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <i class="fa fa-hourglass-start fa-5x mid-icon" aria-hidden="true"></i>
+                        <div class="entry-header">
+                            <h3><a href="#">最小限の導入リスク</a></h3>
+                        </div>
+                        <div class="entry-content">
+                            <p>標準的な機能を搭載したシンプルパッケージをご用意しております。カスタマイズ不要で短期間・低リスクでの導入が可能です</p>
+                            <p>また、CAMMAXは1機能から導入が可能。お客様は利用しない機能の料金や何百万円ものカスタマイズ費用を支払う必要はありません。</p>
+                        </div>
                     </div>
-                    <div class="entry-content">
-                        <p>標準的な機能を搭載したシンプルパッケージをご用意しております。カスタマイズ不要で短期間・低リスクでの導入が可能です</p>
-                        <p>また、CAMMAXは1機能から導入が可能。お客様は利用しない機能の料金や何百万円ものカスタマイズ費用を支払う必要はありません。</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-                    <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
-                    <div class="entry-header">
-                        <h3><a href="#">マニュアル不要のインターフェース</a></h3>
-                    </div>
-                    <div class="entry-content">
-                        <p>
-                            CAMMAXはシンプルで使いやすいインターフェースを採用。導入後のIT部門への問い合わせを限りなく少なくしました。今ならトレーニングサイトも無償でご用意。もちろん導入後のご対応もサポートいたします</p>
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="800ms">
+                        <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
+                        <div class="entry-header">
+                            <h3><a href="#">マニュアル不要のインターフェース</a></h3>
+                        </div>
+                        <div class="entry-content">
+                            <p>
+                                CAMMAXはシンプルで使いやすいインターフェースを採用。導入後のIT部門への問い合わせを限りなく少なくしました。今ならトレーニングサイトも無償でご用意。もちろん導入後のご対応もサポートいたします</p>
+                        </div>
                     </div>
                 </div>
             </div>
