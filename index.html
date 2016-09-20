@@ -67,11 +67,25 @@
             margin-left: auto;
         }
 
-        .keyword {
+        .strong {
+            color: #7FBA00;
+        }
+
+        .strong.more {
             font-weight: bold;
             color: #7FBA00;
         }
 
+        .top-space {
+            margin-top: 50px;
+        }
+
+        .check-list {
+            font-size: 18px;
+        }
+
+        .fa-inverse {
+            color: #c1e2b3;}
 
     </style>
 
@@ -89,7 +103,8 @@
             <div class="item active" style="background-image: url(images/slider/1.jpg)">
                 <div class="caption">
                     <h1 class="animated fadeInLeftBig">成長するクラウド型<span>ERP</span></h1>
-                    <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に成長するサービス <strong>"CAMMMAX"</strong></p>
+                    <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に成長するサービス"<span class="strong more">CAMMMAX</span>"
+                    </p>
                     <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
                 </div>
             </div>
@@ -128,63 +143,67 @@
 <section id="catch">
     <div class="container">
         <div class="row">
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
-             data-wow-delay="300ms">
-            <h2>CAMMAXとは？</h2>
-            <h3>CAMMAXは最速1ヶ月、最低3ユーザー、月額円から始められる<strong>低リスク導入型ERP</strong>です</h3>
-            <h3>その驚くべきコストパフォーマンスを体感してみませんか？</h3>
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <h2>CAMMAXとは？</h2>
+                <h3>CAMMAXは最速1ヶ月、最低3ユーザー、月額円から始められる<span class="strong more">低リスク導入型ERP</span>です</h3>
+                <h3>その驚くべきコストパフォーマンスを体感してみませんか？</h3>
+            </div>
+            <div class="col-sm-8 col-sm-offset-3 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="350ms">
+                <ul class="fa-ul check-list">
+                    <li><i class="fa fa-check-square-o fa-3x"></i>自社システムの運用コストが経営のボトルネックになっている
+                    <li>
+                    <li><i class="fa fa-check-square-o fa-3x"></i>システム導入を検討したが見積もりが高すぎて断念した
+                    <li>
+                    <li><i class="fa fa-check-square-o fa-3x"></i>システム導入にかかる時間や人手を考えると「今じゃない」と思う
+                    <li>
+                    <li><i class="fa fa-check-square-o fa-3x"></i>顧客データをクラウドで管理するなんて恐ろしい
+                    <li>
+                </ul>
+            </div>
+            <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="400ms">
+                <h2><span class="strong">おめでとうございます<br>CAMMAXならあなたの経営をご支援できます</span></h2>
+            </div>
         </div>
-        <div class="col-sm-8 col-sm-offset-3 wow fadeInUp" data-wow-duration="1200ms"
-             data-wow-delay="350ms">
-            <ul class="fa-ul">
-                <li><i class="fa fa-check-square-o fa-3x"></i>自社システムの運用コストが経営のボトルネックになっている
-                <li>
-                <li><i class="fa fa-check-square-o fa-3x"></i>システム導入を検討したが見積もりが高すぎて断念した
-                <li>
-                <li><i class="fa fa-check-square-o fa-3x"></i>システム導入にかかる時間や人手を考えると「今じゃない」と思う
-                <li>
-                <li><i class="fa fa-check-square-o fa-3x"></i>顧客データをクラウドで管理するのはセキュリティが不安
-                <li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-        <div class="blog-posts">
-            <div class="row">
-                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp"
-                     data-wow-duration="1200ms"
-                     data-wow-delay="300ms">
-                    <h2>CAMMAXのすごいところ</h2>
-                </div>
-                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                    <i class="fa fa-refresh fa-5x" style="margin: 0 auto" aria-hidden="true"></i>
-                    <div class="entry-header">
-                        <h3><a href="#">全業務のデータを一元管理</a></h3>
+        <div class="container">
+            <div class="blog-posts">
+                <div class="row">
+                    <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp top-space"
+                         data-wow-duration="1200ms"
+                         data-wow-delay="300ms">
+                        <h2>CAMMAXのすごいところ</h2>
                     </div>
-                    <div class="entry-content">
-                        <p>CAMMAXはあらゆる業務をカバーできるトータル・ソリューションをご提供。全てのデータは社内より安全なAWSのセキュリティ環境下で保護されます。</p>
-                        <p>
-                            もちろん既存システムや外部システムとの連携もお任せください。日々の事務作業コスト削減はもちろん、収集したデータを元に様々な分析データを出力し、お客様の売り上げ向上を支援いたします</p>
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="400ms">
+                        <i class="fa fa-medkit fa-5x" style="margin: 0 auto" aria-hidden="true"></i>
+                        <div class="entry-header">
+                            <h3><a href="#">最小限の導入リスク</a></h3>
+                        </div>
+                        <div class="entry-content">
+                            <p>販売管理・仕入管理など、汎用的なサービス全5機能についてシンプルパッケージをご用意しました。CAMMAXは1機能から、最短1ヶ月で導入可能。</p>
+                            <p>もう導入の度に大量の人手や時間を費やしたり、カスタマイズに何百万もの費用をかける必要はありません。</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <i class="fa fa-line-chart fa-5x mid-icon" aria-hidden="true"></i>
-                    <div class="entry-header">
-                        <h3><a href="#">最小限の導入リスク</a></h3>
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <i class="fa fa-line-chart fa-5x" aria-hidden="true"></i>
+                        <div class="entry-header">
+                            <h3><a href="#">ずっと使える高い拡張性</a></h3>
+                        </div>
+                        <div class="entry-content">
+                            <p>会社は成長しているのに古いシステムがボトルネックになっていませんか？CAMMAXなら会社の成長に合わせて機能・サービスを拡張できます</p>
+                            <p>カスタマイズも自由自在。新しい事業も、会社規模拡大も、邪魔せず応援するのが"CAMMAX"です。</p>
+                        </div>
                     </div>
-                    <div class="entry-content">
-                        <p>標準的な機能を搭載したシンプルパッケージをご用意しております。カスタマイズ不要で短期間・低リスクでの導入が可能です</p>
-                        <p>また、CAMMAXは1機能から導入が可能。お客様は利用しない機能の料金や何百万円ものカスタマイズ費用を支払う必要はありません。</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-                    <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
-                    <div class="entry-header">
-                        <h3><a href="#">マニュアル不要のインターフェース</a></h3>
-                    </div>
-                    <div class="entry-content">
-                        <p>
-                            CAMMAXはシンプルで使いやすいインターフェースを採用。導入後のIT部門への問い合わせを限りなく少なくしました。今ならトレーニングサイトも無償でご用意。もちろん導入後のご対応もサポートいたします</p>
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="800ms">
+                        <i class="fa fa-lock fa-5x" aria-hidden="true"></i>
+                        <div class="entry-header">
+                            <h3><a href="#">安心・安全のAWS環境</a></h3>
+                        </div>
+                        <div class="entry-content">
+                            <p>クラウド運用にセキュリティの不安を持つお客様は少なくありません。CAMMAXはAWSの強固なセキュリティ環境で運用いたします。</p>
+                            <p>更にバックアップやバージョンアップなどの運用・保守から解放され、システム部門はIT企画や活用など、IT戦略に集中することができます。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,7 +226,7 @@
             <div class="row">
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="service-icon">
-                        <i class="fa fa-plus-circle"></i>
+                            <i class="fa fa-plus"></i>
                     </div>
                     <div class="service-info">
                         <h3>販売・債権管理</h3>
@@ -216,7 +235,7 @@
                 </div>
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
                     <div class="service-icon">
-                        <i class="fa fa-minus-circle"></i>
+                            <i class="fa fa-minus"></i>
                     </div>
                     <div class="service-info">
                         <h3>仕入・債務管理</h3>
@@ -494,7 +513,6 @@
                             <li>導入期間 5か月</li>
                             <li>導入機能 販売管理等</li>
                         </ul>
-                        <p>「導入実績」として1つに絞って詳細を書いたほうがいいかも</p>
                     </div>
                 </div>
                 <div class="col-sm-6">
