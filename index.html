@@ -74,18 +74,22 @@
             display: block;
             content: '\f201';
             font-family: FontAwesome;
-            color: #bbb;
+            color: #dddddd;
             font-size: 500px;
             text-align: center;
 
         }
 
-        .space {
+        .space70 {
             margin-top: 70px;
         }
 
-        .gray-out {
-            color: lightgrey;
+        .space30 {
+            margin-top: 30px;
+        }
+
+        .space100 {
+            margin-top: 100px;
         }
 
         #catch ul {
@@ -95,6 +99,63 @@
             background-color: inherit;
             display: inline-block;
         }
+
+        .strong {
+            font-weight: bold;
+            color: #7FBA00;
+        }
+
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            margin-bottom: -1px;
+            background-color: #7FBA00;
+            border: none;
+            text-align: center;
+
+        }
+
+        a.list-group-item,
+        button.list-group-item {
+            color: #ffffff;
+        }
+
+        .popover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            display: none;
+            max-width: 276px;
+            padding: 1px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.42857143;
+            text-align: left;
+            text-align: start;
+            text-decoration: none;
+            text-shadow: none;
+            text-transform: none;
+            letter-spacing: normal;
+            word-break: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: normal;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+
+            line-break: auto;
+        }
+
 
 
     </style>
@@ -112,13 +173,13 @@
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(images/slider/1.jpg)">
                 <div class="caption">
-                    <h1 class="animated fadeInLeftBig">成長するクラウド型<span>ERP</span></h1>
-                    <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に成長するサービス <strong>"CAMMMAX"</strong></p>
+                    <h1 class="animated fadeInLeftBig">進化するERP<span> CAMMMAX </span></h1>
+                    <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に進化するクラウド型サービス </p>
                     <a data-scroll class="btn btn-start animated fadeInUpBig" href="#catch">Start now</a>
                 </div>
             </div>
         </div>
-        <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+        <a id="tohash" href="#catch"><i class="fa fa-angle-down"></i></a>
     </div><!--/#home-slider-->
     <div class="main-nav">
         <div class="container">
@@ -156,34 +217,45 @@
                  data-wow-delay="300ms">
                 <h2>CAMMAXとは？</h2>
                 <h3>CAMMAXはお客様の成長に合わせてサービスを柔軟に拡張できるクラウド型ERPです</h3>
-                <h3>10年後の経営を見据えたIT投資を<strong> 今 </strong>始めませんか？</h3>
+                <h3>10年後の経営を見据えたIT投資を<span class="strong"> 今 </span>始めませんか？</h3>
             </div>
-            <div class="col-sm-8 wow fadeInUp" data-wow-duration="1200ms"
-                 data-wow-delay="350ms">
-                <h4>CAMMAXなら・・・</h4>
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="500ms">
+                <blockquote>
+                    <p>
+                        新規事業や経営拡大、会社の未来に社内システムがボトムネックになっていませんか？
+                        <br>CAMMAXなら莫大な時間や人員を費やすことなく<br>短期間・低コストでサービス導入・拡張が可能です。
+                        <br>もちろんパフォーマンスやメモリーを気にすることなくご利用いただけます。</p>
+                </blockquote>
             </div>
+        </div>
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+             data-wow-delay="300ms">
+            <h2>例えばCAMMAXならこんな未来も</h2>
         </div>
         <div class="chart col-sm-8 col-sm-offset-3"></div>
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="entry-header">
                 <h3>スタートアップ期</h3>
+                <p>年商<strong> 1</strong>億</p>
+                <p>従業員数<strong> 10</strong>人</p>
             </div>
-            <div class="row">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-home fa-fw"
+            <div class="row space30">
+                <a class="list-group-item col-xs-3 col-sm-offset-1"><i class="fa fa-home fa-fw fa-2x"
                                                                                             aria-hidden="true"></i>&nbsp;
                     <br>販売管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-book fa-fw"
-                                                                                            aria-hidden="true"></i>&nbsp;
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1"><i class="fa fa-book fa-fw fa-2x"
+                                                                                   aria-hidden="true"></i>&nbsp;
                     <br>仕入管理</a>
             </div>
-            <div class="row space">
-                <div class="col-xs-1">
+            <div class="row space70">
+                <div class="col-xs-2">
                     <i class="fa fa-child  fa-3x" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-10">
                     <div class="popover right show service-popover">
                         <div class="arrow"></div>
-                        <div class="popover-content"><p>ローリスクのIT投資で売上UPしたい！</p></div>
+                        <div class="popover-content"><p>コストをかけずにIT投資で売上UPしたい！</p></div>
                     </div>
                 </div>
             </div>
@@ -191,23 +263,31 @@
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="entry-header">
                 <h3>急成長期</h3>
+                <p>年商<strong> 50</strong>億</p>
+                <p>従業員数<strong> 100</strong>人</p>
             </div>
-            <div class="row">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-home fa-fw"
+            <div class="row space30">
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-0" href="#"><i
+                        class="fa fa-home fa-fw fa-2x"
                                                                                             aria-hidden="true"></i>&nbsp;
-                    <br>販売管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-book fa-fw"
+                    <br>EC管理</a>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
+                        class="fa fa-book fa-fw fa-2x"
                                                                                             aria-hidden="true"></i>&nbsp;
-                    <br>仕入管理</a>
+                    <br>生産管理</a>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
+                        class="fa fa-book fa-fw fa-2x"
+                        aria-hidden="true"></i>&nbsp;
+                    <br>物流連携</a>
             </div>
-            <div class="row space">
-                <div class="col-xs-1">
+            <div class="row space70">
+                <div class="col-xs-2">
                     <i class="fa fa-user  fa-3x" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-10">
                     <div class="popover right show service-popover">
                         <div class="arrow"></div>
-                        <div class="popover-content"><p>軌道に乗ってきたしEC通販も始めよう！</p></div>
+                        <div class="popover-content"><p>軌道に乗ってきたしEC通販も始めよう！自社ブランドも立ち上げて販売力強化だ！</p></div>
                     </div>
                 </div>
             </div>
@@ -215,23 +295,27 @@
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="entry-header">
                 <h3>安定期</h3>
+                <p>年商<strong> 100</strong>億</p>
+                <p>従業員数<strong> 300</strong>人</p>
             </div>
-            <div class="row">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-home fa-fw"
+            <div class="row space30">
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
+                        class="fa fa-home fa-fw fa-2x"
                                                                                             aria-hidden="true"></i>&nbsp;
-                    <br>販売管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i class="fa fa-book fa-fw"
+                    <br>輸出管理</a>
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
+                        class="fa fa-book fa-fw fa-2x"
                                                                                             aria-hidden="true"></i>&nbsp;
-                    <br>仕入管理</a>
+                    <br>為替機能</a>
             </div>
-            <div class="row space">
-                <div class="col-xs-1">
-                    <i class="fa fa-users  fa-3x" aria-hidden="true"></i>
+            <div class="row space70">
+                <div class="col-xs-2">
+                    <i class="fa fa-users fa-3x" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-10">
                     <div class="popover right show service-popover">
                         <div class="arrow"></div>
-                        <div class="popover-content"><p>わが社も海外進出を...</p></div>
+                        <div class="popover-content"><p>上場も果たし、わが社もついに海外進出だ</p></div>
                     </div>
                 </div>
             </div>
@@ -239,7 +323,7 @@
         <div class="container">
             <div class="blog-posts">
                 <div class="row">
-                    <div class="heading text-center col-sm-8 col-sm-offset-2 space wow fadeInUp"
+                    <div class="heading text-center col-sm-8 col-sm-offset-2 space100 wow fadeInUp"
                          data-wow-duration="1200ms"
                          data-wow-delay="300ms">
                         <h2>CAMMAXのすごいところ</h2>
@@ -273,6 +357,8 @@
                         <div class="entry-content">
                             <p>
                                 CAMMAXはシンプルで使いやすいインターフェースを採用。導入後のIT部門への問い合わせを限りなく少なくしました。今ならトレーニングサイトも無償でご用意。もちろん導入後のご対応もサポートいたします</p>
+                            <p>
+                                社内ITの人員は運用・保守・さらに社内フォローからも解放され、これまで以上にIT戦略・活用に集中することができます</p>
                         </div>
                     </div>
                 </div>
@@ -300,7 +386,7 @@
                     </div>
                     <div class="service-info">
                         <h3>販売・債権管理</h3>
-                        <p>見積もり・受注・売り上げの登録処理はもちろん、データを多角的に分析、営業戦略を支援します</p>
+                        <p>売上/入金/債権/受注/債権/見積もり/営業サマリー/各種分析</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
@@ -309,7 +395,7 @@
                     </div>
                     <div class="service-info">
                         <h3>仕入・債務管理</h3>
-                        <p>発注～納品を簡単入力。CAMMAXなら発注ミスもなく、適正在庫を維持できます</p>
+                        <p>発注/納品/債務/返品/請求/支払</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
@@ -318,7 +404,7 @@
                     </div>
                     <div class="service-info">
                         <h3>物流・在庫管理</h3>
-                        <p>めんどうな棚卸、CAMMAXが引き受けます。実在庫も正確に管理欠品・廃棄コストを減らします</p>
+                        <p>在庫/在庫移動/在庫移動指示/棚卸し/予約品</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -327,7 +413,7 @@
                     </div>
                     <div class="service-info">
                         <h3>生産・原価管理</h3>
-                        <p>全プロセスのデータ化で課題の見える化。特殊な生産業務もご相談ください。自由なカスタマイズで導入が可能です。</p>
+                        <p>生産/仕掛り/部品/出荷/入荷</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
@@ -336,8 +422,7 @@
                     </div>
                     <div class="service-info">
                         <h3>EC通販管理</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>EC売上/モール管理/流通連携/主要3モール含む全8モールの管理</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="850ms">
@@ -346,8 +431,7 @@
                     </div>
                     <div class="service-info">
                         <h3>POS・店舗連携</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>POS/スマレジ/店舗管理/店舗間連携/各種店舗別分析</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="950ms">
@@ -356,8 +440,7 @@
                     </div>
                     <div class="service-info">
                         <h3>財務会計</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>仕訳/現金出納/取引先/総勘定/損益計算書/貸借対照表/手形</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
@@ -366,8 +449,7 @@
                     </div>
                     <div class="service-info">
                         <h3>経費精算・稟議</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>経費生産/稟議/給与/人事/部署</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
@@ -376,8 +458,7 @@
                     </div>
                     <div class="service-info">
                         <h3>輸出入管理</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>輸出/輸入/invoice/po</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
@@ -386,8 +467,7 @@
                     </div>
                     <div class="service-info">
                         <h3>他通貨・多言語機能</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>他通貨オプション/他言語オプション</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
@@ -396,8 +476,7 @@
                     </div>
                     <div class="service-info">
                         <h3>配送連携</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>主要配送業者3社との連携・送料比較</p>
                     </div>
                 </div>
                 <div class="col-sm-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="950ms">
@@ -406,8 +485,7 @@
                     </div>
                     <div class="service-info">
                         <h3>その他なんでもカスタマイズ</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore</p>
+                        <p>特殊な業務も対応。お気軽にご相談ください</p>
                     </div>
                 </div>
             </div>
@@ -591,7 +669,6 @@
                             <li>導入期間 5か月</li>
                             <li>導入機能 販売管理等</li>
                         </ul>
-                        <p>「導入実績」として1つに絞って詳細を書いたほうがいいかも</p>
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -667,7 +744,7 @@
                     <div class="col-sm-6">
                         <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                             <p>
-                                今ならオンライン体験版にて弊社サービスを無料で体験することができます。ユーザビリティに優れたサービスを実際に操作してみませんか？なお、おかげさまでたくさんのお客様からご依頼をいただいておりますので、お早目にお問合せください。</p>
+                                今ならオンライン体験版にて弊社サービスを無料で体験することができます。ユーザビリティに優れたサービスを実際に操作してみませんか？なお、おかげさまでたくさんのお客様からご依頼をいただいておりますので、お早目のお問合せをお勧めしております。</p>
                             <p>お電話でのお問合せも承ります。多数の現場を経験した弊社のコンサルタントが丁寧にご説明します。お気軽にご相談ください。</p>
                             <ul class="address">
                                 <li><i class="fa fa-phone"></i> <span> Phone:</span> +928 336 2000</li>
