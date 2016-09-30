@@ -18,7 +18,7 @@
     <link href="css/all.css" rel="stylesheet">
     <link href="css/flaticon.css" rel="stylesheet" type="text/css">
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.src.js"></script>
     <![endif]-->
@@ -156,7 +156,19 @@
             line-break: auto;
         }
 
+        .inline-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+             }
 
+        .icon-sizeA {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 4em;
+             }
 
     </style>
 
@@ -164,11 +176,11 @@
 
 <body>
 
-<!--.preloader-->
-<div class="preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
-<!--/.preloader-->
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
 
-<header id="home">
+  <header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(images/slider/1.jpg)">
@@ -179,7 +191,9 @@
                 </div>
             </div>
         </div>
+
         <a id="tohash" href="#catch"><i class="fa fa-angle-down"></i></a>
+
     </div><!--/#home-slider-->
     <div class="main-nav">
         <div class="container">
@@ -219,38 +233,42 @@
                 <h3>CAMMAXはお客様の成長に合わせてサービスを柔軟に拡張できるクラウド型ERPです</h3>
                 <h3>10年後の経営を見据えたIT投資を<span class="strong"> 今 </span>始めませんか？</h3>
             </div>
-            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
-                 data-wow-delay="500ms">
-                <blockquote>
-                    <p>
-                        新規事業や経営拡大、会社の未来に社内システムがボトムネックになっていませんか？
-                        <br>CAMMAXなら莫大な時間や人員を費やすことなく<br>短期間・低コストでサービス導入・拡張が可能です。
-                        <br>もちろんパフォーマンスやメモリーを気にすることなくご利用いただけます。</p>
-                </blockquote>
-            </div>
-        </div>
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+            <!--<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"-->
+                 <!--data-wow-delay="500ms">-->
+                <!--<blockquote>-->
+                    <!--<p>-->
+                        <!--新規事業や経営拡大、会社の未来に社内システムがボトムネックになっていませんか？-->
+                        <!--<br>CAMMAXなら莫大な時間や人員を費やすことなく<br>短期間・低コストでサービス導入・拡張が可能です。-->
+                        <!--<br>もちろんパフォーマンスやメモリーを気にすることなくご利用いただけます。</p>-->
+                <!--</blockquote>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="heading text-center col-sm-4 col-sm-offset-4 wow fadeInUp" data-wow-duration="1200ms"
              data-wow-delay="300ms">
-            <h2>例えばCAMMAXならこんな未来も</h2>
+            <h3 class="bg-success">例えばCAMMAXならこんな未来も</h3>
         </div>
         <div class="chart col-sm-8 col-sm-offset-3"></div>
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="entry-header">
-                <h3>スタートアップ期</h3>
+                <h3 class="strong">スタートアップ期</h3>
                 <p>年商<strong> 1</strong>億</p>
                 <p>従業員数<strong> 10</strong>人</p>
             </div>
             <div class="row space30">
-                <a class="list-group-item col-xs-3 col-sm-offset-1"><i class="fa fa-home fa-fw fa-2x"
-                                                                                            aria-hidden="true"></i>&nbsp;
+                <a class="list-group-item col-xs-3 col-sm-offset-1" href="#services">
+                    <span class="label label-default inline-label">standard</span>
+                    <i class="fa fa-sign-out fa-fw fa-2x"
+                                                                       aria-hidden="true"></i>&nbsp;
                     <br>販売管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1"><i class="fa fa-book fa-fw fa-2x"
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                    <span class="label label-default inline-label">standard</span>
+                    <i class="fa fa-sign-in fa-fw fa-2x"
                                                                                    aria-hidden="true"></i>&nbsp;
                     <br>仕入管理</a>
             </div>
             <div class="row space70">
                 <div class="col-xs-2">
-                    <i class="fa fa-child  fa-3x" aria-hidden="true"></i>
+                    <i class="flaticon-people-9 icon-sizeA" aria-hidden="true"></i>
                 </div>
                 <div class="col-xs-10">
                     <div class="popover right show service-popover">
@@ -262,27 +280,32 @@
         </div>
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="entry-header">
-                <h3>急成長期</h3>
+                <h3 class="strong">急成長期</h3>
                 <p>年商<strong> 50</strong>億</p>
                 <p>従業員数<strong> 100</strong>人</p>
             </div>
             <div class="row space30">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-0" href="#"><i
-                        class="fa fa-home fa-fw fa-2x"
-                                                                                            aria-hidden="true"></i>&nbsp;
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-0" href="#services">
+                    <span class="label label-default inline-label">standard</span>
+                    <i class="fa fa-shopping-cart fa-fw fa-2x"></i>&nbsp;
                     <br>EC管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
-                        class="fa fa-book fa-fw fa-2x"
-                                                                                            aria-hidden="true"></i>&nbsp;
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                    <span class="label label-default inline-label">standard</span>
+                    <i
+                        class="fa fa fa-wrench fa-fw fa-2x"
+                        aria-hidden="true"></i>&nbsp;
                     <br>生産管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
-                        class="fa fa-book fa-fw fa-2x"
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                    <span class="label label-success inline-label">option</span>
+                    <i
+                        class="fa fa fa-truck fa-fw fa-2x"
                         aria-hidden="true"></i>&nbsp;
                     <br>物流連携</a>
             </div>
             <div class="row space70">
                 <div class="col-xs-2">
-                    <i class="fa fa-user  fa-3x" aria-hidden="true"></i>
+                    <i class="flaticon-three-1 icon-sizeA" aria-hidden="true">
+                    </i>
                 </div>
                 <div class="col-xs-10">
                     <div class="popover right show service-popover">
@@ -294,23 +317,27 @@
         </div>
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="entry-header">
-                <h3>安定期</h3>
+                <h3 class="strong">安定期</h3>
                 <p>年商<strong> 100</strong>億</p>
                 <p>従業員数<strong> 300</strong>人</p>
             </div>
             <div class="row space30">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
-                        class="fa fa-home fa-fw fa-2x"
-                                                                                            aria-hidden="true"></i>&nbsp;
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                    <span class="label label-success inline-label">option</span>
+                    <i
+                        class="fa  fa-ship fa-fw fa-2x"
+                        aria-hidden="true"></i>&nbsp;
                     <br>輸出管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#"><i
-                        class="fa fa-book fa-fw fa-2x"
-                                                                                            aria-hidden="true"></i>&nbsp;
+                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                    <span class="label label-success inline-label">option</span>
+                    <i
+                        class="fa fa-dollar fa-fw fa-2x"
+                        aria-hidden="true"></i>&nbsp;
                     <br>為替機能</a>
             </div>
             <div class="row space70">
                 <div class="col-xs-2">
-                    <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+                    <i class="flaticon-people" aria-hidden="true" style="font-size: 5em"></i>
                 </div>
                 <div class="col-xs-10">
                     <div class="popover right show service-popover">
@@ -365,7 +392,7 @@
             </div>
         </div>
     </div>
-</section><!--/#blog-->
+</section><!--/#catch-->
 
 <section id="services">
     <div class="container">
