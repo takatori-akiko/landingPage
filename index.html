@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>成長するクラウドERP</title>
+    <title>クラウドからはじめるERP</title>
     <!--
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/animate.css" rel="stylesheet">
@@ -15,10 +15,10 @@
       <link id="css-preset" href="css/presets/preset3.css" rel="stylesheet">
       <link href="css/responsive.css" rel="stylesheet">
     -->
-    <link href="css/all.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
     <link href="css/flaticon.css" rel="stylesheet" type="text/css">
 
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.src.js"></script>
     <![endif]-->
@@ -67,25 +67,26 @@
             margin-left: auto;
         }
 
-        div.chart:after {
-            z-index: -100;
-            position: absolute;
-            margin-top: 150px;
-            display: block;
-            content: '\f201';
-            font-family: FontAwesome;
-            color: #dddddd;
-            font-size: 500px;
+        .trouble {
+            margin-top: 5px;
+            margin-right: 10px;
+            content: '\f105';
+            font-family: Flaticon;
+            color: lightgray;
+            font-size: 5em;
             text-align: center;
-
         }
 
-        .space70 {
-            margin-top: 70px;
+        .space10 {
+            margin: 20px;
         }
 
         .space30 {
             margin-top: 30px;
+        }
+
+        .space70 {
+            margin-top: 70px;
         }
 
         .space100 {
@@ -103,6 +104,22 @@
         .strong {
             font-weight: bold;
             color: #7FBA00;
+        }
+
+        .strong.big {
+            font-size: 50px;
+        }
+
+        .font2 {
+            font-size: 2em;
+        }
+
+        .font4 {
+            font-size: 4em;
+        }
+
+        .font100 {
+            font-size: 100px;
         }
 
         .list-group-item {
@@ -127,7 +144,6 @@
             left: 0;
             z-index: 0;
             display: none;
-            max-width: 276px;
             padding: 1px;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 14px;
@@ -161,14 +177,23 @@
             top: 0;
             left: 0;
             display: inline-block;
-             }
+        }
 
         .icon-sizeA {
             display: inline-block;
             margin-top: 20px;
             text-align: center;
             font-size: 4em;
-             }
+        }
+
+        .chart {
+            background-image: url("images/ChartGrouth.png");
+            background-repeat: no-repeat;
+            -moz-background-size: 70% 100%;
+            background-size: 70% 100%;
+            background-position: 50% 100%;
+            overflow: hidden;
+        }
 
     </style>
 
@@ -176,24 +201,23 @@
 
 <body>
 
-  <!--.preloader-->
-  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
-  <!--/.preloader-->
+<!--.preloader-->
+<div class="preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+<!--/.preloader-->
 
-  <header id="home">
+<header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(images/slider/1.jpg)">
                 <div class="caption">
-                    <h1 class="animated fadeInLeftBig">進化するERP<span> CAMMMAX </span></h1>
-                    <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に進化するクラウド型サービス </p>
-                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="#catch">Start now</a>
+                    <h1 class="animated fadeInLeftBig">クラウドからはじめる<span>ERP</span></h1>
+                    <p class="animated fadeInRightBig">企業の成長を支援し、企業と共に進化する経営管理サービス<span class="strong">CAMMAX</span>
+                    </p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">What's CAMMAX?</a>
                 </div>
             </div>
         </div>
-
-        <a id="tohash" href="#catch"><i class="fa fa-angle-down"></i></a>
-
+        <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
     </div><!--/#home-slider-->
     <div class="main-nav">
         <div class="container">
@@ -211,12 +235,12 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="scroll active"><a href="#home">Home</a></li>
-                    <li class="scroll"><a href="#catch">サービス紹介</a></li>
-                    <li class="scroll"><a href="#services">サービス一覧</a></li>
+                    <li class="scroll"><a href="#services">CAMMAXって？</a></li>
+                    <li class="scroll"><a href="#advantages">CAMMAXの強み</a></li>
+                    <li class="scroll"><a href="#servicesList">サービス一覧</a></li>
                     <li class="scroll"><a href="#pricing">ご利用料金</a></li>
-                    <li class="scroll"><a href="#case">導入事例</a></li>
+                    <li class="scroll"><a href="#features">導入事例</a></li>
                     <li class="scroll"><a href="#voice">お客様の声</a></li>
-                    <li class="scroll"><a href="#about-us">導入実績</a></li>
                     <li class="scroll"><a href="#contact">お問合せ</a></li>
                 </ul>
             </div>
@@ -224,129 +248,188 @@
     </div><!--/#main-nav-->
 </header><!--/#home-->
 
-<section id="catch">
+<section id="services">
     <div class="container">
         <div class="row">
             <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
                  data-wow-delay="300ms">
-                <h2>CAMMAXとは？</h2>
+                <h2>ERP導入でお悩みですか？</h2>
+            </div>
+            <div class="text-center col-sm-4 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <div class="space10">
+                    <h3>システムが<span class="strong big">古</span>い</h3>
+                </div>
+                <i class="flaticon-business trouble" aria-hidden="true"></i>
+                <blockquote>
+                    <p>高額な費用を払ってサーバーを買ったのに業務が急激に増えて<span class="strong">パフォーマンスもメモリも限界</span>に。他にもサーバーアップデートやバックアップにコストがかかってさらにはもうすぐ保守切れに…
+                    </p>
+                </blockquote>
+            </div>
+            <div class="text-center col-sm-4 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <div class="space10">
+                    <h3>システムが<span class="strong big">高</span>い</h3>
+                </div>
+                <i class="flaticon-business trouble" aria-hidden="true"></i><i class="flaticon-business trouble"
+                                                                               aria-hidden="true"></i>
+                <blockquote>
+                    <p>会社が急成長しIT投資に踏み込むべく、大手ベンダーに見積もりを出したが<span class="strong">初期費用が予想以上の金額</span>。加えてランニングコストも負担できるかどうか…諦めて人を雇うのがいいのだろうか…
+                    </p>
+                </blockquote>
+            </div>
+            <div class="text-center col-sm-4 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <div class="space10">
+                    <h3>システムが<span class="strong big">重</span>い</h3>
+                </div>
+                <i class="flaticon-business trouble" aria-hidden="true"></i>
+                <i class="flaticon-business trouble" aria-hidden="true"></i>
+                <i class="flaticon-business trouble" aria-hidden="true"></i>
+                <blockquote>
+                    <p>コストカットのために導入したシステム。業務改革・組織変更のたび膨大な人員と時間がかかってしまい社内ITは現場の問い合わせ窓口になってしまった…いつの間にか<span
+                            class="strong">システムが経営のボトルネックに</span>なっている気が…</p>
+                </blockquote>
+            </div>
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp font2" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <i class="flaticon-people-4 font100" aria-hidden="true"></i>
+                効果的に経営資源を活用したいだけなのに…
+            </div>
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp font2" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <a href="#services"><i class="fa fa-angle-down fa-2x"></i></a>
+            </div>
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="350ms">
+                <h1>そのお悩み、<span class="strong">CAMMAX</span>にお任せください</h1>
+            </div>
+            <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp font2" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <a href="#services"><i class="fa fa-angle-down fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"
+                 data-wow-delay="300ms">
+                <h2><span class="strong">CAMMAX</span>とは？</h2>
                 <h3>CAMMAXはお客様の成長に合わせてサービスを柔軟に拡張できるクラウド型ERPです</h3>
                 <h3>10年後の経営を見据えたIT投資を<span class="strong"> 今 </span>始めませんか？</h3>
             </div>
-            <!--<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms"-->
-                 <!--data-wow-delay="500ms">-->
-                <!--<blockquote>-->
-                    <!--<p>-->
-                        <!--新規事業や経営拡大、会社の未来に社内システムがボトムネックになっていませんか？-->
-                        <!--<br>CAMMAXなら莫大な時間や人員を費やすことなく<br>短期間・低コストでサービス導入・拡張が可能です。-->
-                        <!--<br>もちろんパフォーマンスやメモリーを気にすることなくご利用いただけます。</p>-->
-                <!--</blockquote>-->
-            <!--</div>-->
-        <!--</div>-->
-        <div class="heading text-center col-sm-4 col-sm-offset-4 wow fadeInUp" data-wow-duration="1200ms"
-             data-wow-delay="300ms">
-            <h3 class="bg-success">例えばCAMMAXならこんな未来も</h3>
-        </div>
-        <div class="chart col-sm-8 col-sm-offset-3"></div>
-        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="entry-header">
-                <h3 class="strong">スタートアップ期</h3>
-                <p>年商<strong> 1</strong>億</p>
-                <p>従業員数<strong> 10</strong>人</p>
-            </div>
-            <div class="row space30">
-                <a class="list-group-item col-xs-3 col-sm-offset-1" href="#services">
-                    <span class="label label-default inline-label">standard</span>
-                    <i class="fa fa-sign-out fa-fw fa-2x"
-                                                                       aria-hidden="true"></i>&nbsp;
-                    <br>販売管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
-                    <span class="label label-default inline-label">standard</span>
-                    <i class="fa fa-sign-in fa-fw fa-2x"
-                                                                                   aria-hidden="true"></i>&nbsp;
-                    <br>仕入管理</a>
-            </div>
-            <div class="row space70">
-                <div class="col-xs-2">
-                    <i class="flaticon-people-9 icon-sizeA" aria-hidden="true"></i>
+            <div class="chart col-sm-12">
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="entry-header">
+                        <h3 class="strong">スタートアップ期</h3>
+                        <p>年商<strong> 1</strong>億</p>
+                        <p>従業員数<strong> 10</strong>人</p>
+                    </div>
+                    <div class="row space30">
+                        <a class="list-group-item col-xs-3 col-sm-offset-1" href="#services">
+                            <span class="label label-default inline-label">standard</span>
+                            <i class="fa fa-sign-out fa-fw fa-2x"
+                               aria-hidden="true"></i>&nbsp;
+                            <br>販売管理</a>
+                        <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                            <span class="label label-default inline-label">standard</span>
+                            <i class="fa fa-sign-in fa-fw fa-2x"
+                               aria-hidden="true"></i>&nbsp;
+                            <br>仕入管理</a>
+                    </div>
+                    <div class="row space70">
+                        <div class="col-xs-12">
+                            <div class="popover top show service-popover">
+                                <div class="arrow"></div>
+                                <div class="popover-content"><p>コストをかけずにIT投資で売上UPしたい！</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row space70">
+                        <div class="col-xs-12 text-center">
+                            <i class=" flaticon-business icon-sizeA" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-10">
-                    <div class="popover right show service-popover">
-                        <div class="arrow"></div>
-                        <div class="popover-content"><p>コストをかけずにIT投資で売上UPしたい！</p></div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="entry-header">
+                        <h3 class="strong">急成長期</h3>
+                        <p>年商<strong> 50</strong>億</p>
+                        <p>従業員数<strong> 100</strong>人</p>
+                    </div>
+                    <div class="row space30">
+                        <a class="list-group-item col-xs-3 text-center col-sm-offset-0" href="#services">
+                            <span class="label label-default inline-label">standard</span>
+                            <i class="fa fa-shopping-cart fa-fw fa-2x"></i>&nbsp;
+                            <br>EC管理</a>
+                        <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                            <span class="label label-default inline-label">standard</span>
+                            <i
+                                    class="fa fa fa-wrench fa-fw fa-2x"
+                                    aria-hidden="true"></i>&nbsp;
+                            <br>生産管理</a>
+                        <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                            <span class="label label-success inline-label">option</span>
+                            <i
+                                    class="fa fa fa-truck fa-fw fa-2x"
+                                    aria-hidden="true"></i>&nbsp;
+                            <br>物流連携</a>
+                    </div>
+                    <div class="row space70">
+                        <div class="col-xs-12">
+                            <div class="popover top show service-popover">
+                                <div class="arrow"></div>
+                                <div class="popover-content"><p>軌道に乗ってきたしEC通販も始めよう！自社ブランドも立ち上げて販売力強化だ！</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row space70">
+                        <div class="col-xs-12 text-center">
+                            <i class=" flaticon-three-1 icon-sizeA" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="entry-header">
+                        <h3 class="strong">安定期</h3>
+                        <p>年商<strong> 100</strong>億</p>
+                        <p>従業員数<strong> 300</strong>人</p>
+                    </div>
+                    <div class="row space30">
+                        <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                            <span class="label label-success inline-label">option</span>
+                            <i
+                                    class="fa  fa-ship fa-fw fa-2x"
+                                    aria-hidden="true"></i>&nbsp;
+                            <br>輸出管理</a>
+                        <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
+                            <span class="label label-success inline-label">option</span>
+                            <i
+                                    class="fa fa-dollar fa-fw fa-2x"
+                                    aria-hidden="true"></i>&nbsp;
+                            <br>為替機能</a>
+                    </div>
+                    <div class="row space70">
+                        <div class="col-xs-12">
+                            <div class="popover top show service-popover">
+                                <div class="arrow"></div>
+                                <div class="popover-content"><p>上場も果たし、わが社もついに海外進出だ</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row space70">
+                        <div class="col-xs-12 text-center">
+                            <i class=" flaticon-business icon-sizeA" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="entry-header">
-                <h3 class="strong">急成長期</h3>
-                <p>年商<strong> 50</strong>億</p>
-                <p>従業員数<strong> 100</strong>人</p>
-            </div>
-            <div class="row space30">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-0" href="#services">
-                    <span class="label label-default inline-label">standard</span>
-                    <i class="fa fa-shopping-cart fa-fw fa-2x"></i>&nbsp;
-                    <br>EC管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
-                    <span class="label label-default inline-label">standard</span>
-                    <i
-                        class="fa fa fa-wrench fa-fw fa-2x"
-                        aria-hidden="true"></i>&nbsp;
-                    <br>生産管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
-                    <span class="label label-success inline-label">option</span>
-                    <i
-                        class="fa fa fa-truck fa-fw fa-2x"
-                        aria-hidden="true"></i>&nbsp;
-                    <br>物流連携</a>
-            </div>
-            <div class="row space70">
-                <div class="col-xs-2">
-                    <i class="flaticon-three-1 icon-sizeA" aria-hidden="true">
-                    </i>
-                </div>
-                <div class="col-xs-10">
-                    <div class="popover right show service-popover">
-                        <div class="arrow"></div>
-                        <div class="popover-content"><p>軌道に乗ってきたしEC通販も始めよう！自社ブランドも立ち上げて販売力強化だ！</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="entry-header">
-                <h3 class="strong">安定期</h3>
-                <p>年商<strong> 100</strong>億</p>
-                <p>従業員数<strong> 300</strong>人</p>
-            </div>
-            <div class="row space30">
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
-                    <span class="label label-success inline-label">option</span>
-                    <i
-                        class="fa  fa-ship fa-fw fa-2x"
-                        aria-hidden="true"></i>&nbsp;
-                    <br>輸出管理</a>
-                <a class="list-group-item col-xs-3 text-center col-sm-offset-1" href="#services">
-                    <span class="label label-success inline-label">option</span>
-                    <i
-                        class="fa fa-dollar fa-fw fa-2x"
-                        aria-hidden="true"></i>&nbsp;
-                    <br>為替機能</a>
-            </div>
-            <div class="row space70">
-                <div class="col-xs-2">
-                    <i class="flaticon-people" aria-hidden="true" style="font-size: 5em"></i>
-                </div>
-                <div class="col-xs-10">
-                    <div class="popover right show service-popover">
-                        <div class="arrow"></div>
-                        <div class="popover-content"><p>上場も果たし、わが社もついに海外進出だ</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</section>
+
+<section id="advantages">
+    <div class="container">
         <div class="container">
             <div class="blog-posts">
                 <div class="row">
@@ -355,7 +438,8 @@
                          data-wow-delay="300ms">
                         <h2>CAMMAXのすごいところ</h2>
                     </div>
-                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms"
+                         data-wow-delay="400ms">
                         <i class="fa fa-refresh fa-5x" style="margin: 0 auto" aria-hidden="true"></i>
                         <div class="entry-header">
                             <h3><a href="#">全業務のデータを一元管理</a></h3>
@@ -366,7 +450,8 @@
                                 もちろん既存システムや外部システムとの連携もお任せください。日々の事務作業コスト削減はもちろん、収集したデータを元に様々な分析データを出力し、お客様の売り上げ向上を支援いたします</p>
                         </div>
                     </div>
-                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms"
+                         data-wow-delay="600ms">
                         <i class="fa fa-hourglass-start fa-5x mid-icon" aria-hidden="true"></i>
                         <div class="entry-header">
                             <h3><a href="#">最小限の導入リスク</a></h3>
@@ -376,7 +461,8 @@
                             <p>また、CAMMAXは1機能から導入が可能。お客様は利用しない機能の料金や何百万円ものカスタマイズ費用を支払う必要はありません。</p>
                         </div>
                     </div>
-                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="col-sm-4 wow fadeInUp text-center" data-wow-duration="1000ms"
+                         data-wow-delay="800ms">
                         <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
                         <div class="entry-header">
                             <h3><a href="#">マニュアル不要のインターフェース</a></h3>
@@ -394,7 +480,7 @@
     </div>
 </section><!--/#catch-->
 
-<section id="services">
+<section id="servicesList">
     <div class="container">
         <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="row">
@@ -564,7 +650,8 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
-                    <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="single-table featured wow flipInY" data-wow-duration="1000ms"
+                         data-wow-delay="800ms">
                         <h3>Featured</h3>
                         <div class="price">
                             $29<span>/Month</span>
@@ -716,7 +803,6 @@
 </section><!--/#pricing-->
 
 <section id="contact">
-    <!--<div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>-->
     <div id="contact-us" class="parallax">
         <div class="container">
             <div class="row">
@@ -793,16 +879,17 @@
             <div class="footer-logo">
                 <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>
             </div>
-            <div class="social-icons">
-                <ul>
-                    <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
-                </ul>
-            </div>
+            <!--todo:SNSは更新していないため現在は見せない-->
+            <!--<div class="social-icons">-->
+            <!--<ul>-->
+            <!--<li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>-->
+            <!--<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>-->
+            <!--<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="footer-bottom">
@@ -831,6 +918,18 @@
   <script type="text/javascript" src="js/lightbox.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 -->
-<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/all.min.js"></script>
+<script>
+
+    jQuery(function ($) {
+
+        $('#tohash2').on('click', function () {
+            $('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+            return false;
+        });
+
+    })
+</script>
+
 </body>
 </html>
